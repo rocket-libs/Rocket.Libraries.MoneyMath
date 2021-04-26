@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Furaha.Libraries.XeroSdk.MoneyComputing
+namespace Rocket.Libraries.MoneyMath
 {
     /// <summary>
     /// This is here to allow dependancy injection.
@@ -15,7 +15,7 @@ namespace Furaha.Libraries.XeroSdk.MoneyComputing
         decimal Truncate(decimal input, double decimalPlaces);
     }
 
-    public class MoneyMath : IMoneyMath
+    public class MoneyMathematics : IMoneyMath
     {
         /// <summary>
         /// Safely rounds an input value to the number of desired decimal places
