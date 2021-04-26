@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Description>Perform rounding and truncation operations on floating point numbers without loosing fidelity</Description>
     <Authors>Nyingi Maina</Authors>
     <Company>Rocket Libraries</Company>
