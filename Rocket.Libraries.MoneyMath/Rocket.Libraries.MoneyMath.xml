@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rocket.Libraries.MoneyMath</name>
+    </assembly>
+    <members>
+        <member name="T:Rocket.Libraries.MoneyMath.IMoneyMath">
+            <summary>
+            This is here to allow dependancy injection.
+            Feel free to extend.
+            </summary>
+        </member>
+        <member name="M:Rocket.Libraries.MoneyMath.MoneyMathematics.Round(System.Decimal,System.Double)">
+            <summary>
+            Safely rounds an input value to the number of desired decimal places
+            </summary>
+            <param name="input">The input value</param>
+            <param name="decimalPlaces">The maximum number of decimal places the rounded value should have</param>
+        </member>
+        <member name="M:Rocket.Libraries.MoneyMath.MoneyMathematics.Truncate(System.Decimal,System.Double)">
+            <summary>
+            Safely truncates an input value to the number of desired decimal places
+            </summary>
+            <param name="input">The input value</param>
+            <param name="decimalPlaces">The maximum number of decimal places the truncated value should have</param>
+        </member>
+        <member name="M:Rocket.Libraries.MoneyMath.MoneyMathematics.TrimDecimals(System.Decimal,System.Func{System.Double,System.Double},System.Double)">
+            <summary>
+            Ensures that values after the decimal point are not unintentionally lost when performing mathematical operations on floating point numbers.
+            Does this by first shifting the required number of decimal digits to the left of the decimal place, then performs the math operation, then shifts back the decimal digits to their original place values.
+            </summary>
+            <param name="input">The value on which the math operation is to be performed</param>
+            <param name="trimmer">The math operation function</param>
+            <param name="decimalPlaces">The maximum number of decimal places the result of the operation should have</param>
+        </member>
+    </members>
+</doc>
