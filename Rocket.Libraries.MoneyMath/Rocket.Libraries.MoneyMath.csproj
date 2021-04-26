@@ -7,6 +7,11 @@
     <Authors>Nyingi Maina</Authors>
     <Company>Rocket Libraries</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\code\Tools\Rocket.Libraries.MoneyMath\Rocket.Libraries.MoneyMath\Rocket.Libraries.MoneyMath.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
